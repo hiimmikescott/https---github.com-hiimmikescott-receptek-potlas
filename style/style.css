@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background: url('../pics/bg-body.jpg') fixed;
+    background-size: cover;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+h1{
+    background: url('../pics/bg-header.jpg');
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    font-size: 75px;
+    padding-left: 50px;
+}
+nav{
+    float: left;
+    list-style-type: none;
+    width: 24.999%;
+    background-color: rgb(51, 48 , 48) ;
+}
+ul{
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px 10px auto 10px;
+    background-color: rgb(51, 48 , 48);
+}
+ul li{
+    border-bottom: 2px dashed;
+    color: white;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 15px 0;
+}
+.maincontent{
+    float: right;
+    width: 74.999%;
+    background-color: white;
+    margin:0 auto;
+    padding-top: 20px;
+}
+span{
+    background-color:  rgb(61, 138, 18);
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    box-sizing: border-box;
+    line-break: auto;
+    line-height: 1.5;
+}
+p{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5rem;
+}
+.felsojobb{
+    float: right;
+    margin: 20px;
+}
+.alsoball{
+    float: left;
+    margin: 20px;
+}
+footer{
+    padding: 20px;
+}
+.left{
+    float: left;
+    box-sizing: content-box;
+    padding-top: 10px;
+    color: black;
+}
+.right{
+    float: right;
+    box-sizing: content-box;
+}
+.right a{
+    color: black;
+    display: inline-block;
+    padding: 0 10;
+    text-decoration: underline;
+}
+.maincontent::after, .nav::after, .alsoball::after, .felsojobb::after,.right::after, .left::after{
+    content: "";
+    clear: both;
+    display: table;
+}
